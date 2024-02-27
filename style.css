@@ -13,7 +13,7 @@ main {
   min-height: 100vh;
   max-width: 100%;
   padding: 1rem;
-  background: url(./images/bg.jpeg), no-repeat, center/cover;
+  background: url(./images/bg.jpeg) center/cover no-repeat;
 }
 
 button {
