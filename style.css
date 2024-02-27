@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10px;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 1rem;
+  background: url(./images/bg.jpeg), no-repeat, center/cover;
+}
+
+button {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2) inset;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, width 0.3s; /* Анімація для зміни кольору, фону, розміру і тексту */
+}
+
+button:hover {
+  background-color: #479393;
+  color: #fff;
+}
+
+button:active {
+  background-color: #7b4c7b;
+}
+
+.card-section {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  width: 155px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+
+  transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-item:hover {
+  box-shadow: 0 0 20px #00ffff;
+  transform: translateY(-5px);
+}
+
+.avatar {
+  display: inline-block;
+  margin: 0 auto;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0b5252;
+  text-align: center;
+}
